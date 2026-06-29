@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Get Saucy Hot Sauce logo">
+  <defs>
+    <radialGradient id="gs-teal" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#3FD0C9"/>
+      <stop offset="0.65" stop-color="#17A8B0"/>
+      <stop offset="1" stop-color="#0E7C8A"/>
+    </radialGradient>
+    <linearGradient id="gs-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD23F"/>
+      <stop offset="1" stop-color="#F2960C"/>
+    </linearGradient>
+  </defs>
+  <!-- teal disc -->
+  <circle cx="100" cy="100" r="92" fill="url(#gs-teal)" stroke="#0c2b30" stroke-width="5"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#FFD23F" stroke-width="2" stroke-dasharray="2 7" opacity="0.5"/>
+  <!-- bubble-graffiti wordmark (original interpretation) -->
+  <g font-family="'Archivo Black','Arial Black',sans-serif" text-anchor="middle" font-weight="900">
+    <!-- GET -->
+    <text x="100" y="86" font-size="50" fill="#0c2b30" letter-spacing="1">GET</text>
+    <text x="98.5" y="84.5" font-size="50" fill="url(#gs-gold)" letter-spacing="1">GET</text>
+    <!-- SAUCY -->
+    <text x="100" y="140" font-size="44" fill="#0c2b30" letter-spacing="0.5">SAUCY</text>
+    <text x="98.5" y="138.5" font-size="44" fill="url(#gs-gold)" letter-spacing="0.5">SAUCY</text>
+  </g>
+  <!-- sauce drip -->
+  <path d="M62 150 q4 14 0 20 q-6 4 -8 -2 q-2 -10 8 -18 Z" fill="#D6342B"/>
+  <circle cx="60" cy="176" r="4" fill="#D6342B"/>
+</svg>

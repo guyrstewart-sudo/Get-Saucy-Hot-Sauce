@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Private Chef — Get Saucy Table | Asheville NC</title>
+<meta name="description" content="Book the chef behind Get Saucy for a private dinner. Custom, flavor-forward menus with the sauces woven in. Asheville, NC. Reserve your date.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="index.html"><img src="assets/logo.svg" alt="Get Saucy"><span>GET SAUCY</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="book.html">Book a Chef</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-primary btn-magnetic" href="#booking">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" style="min-height:70vh">
+  <canvas class="hero__canvas" aria-hidden="true"></canvas>
+  <img class="hero__img" src="assets/gs-pepper-pick.jpg" alt="Fresh peppers ready to cook" loading="eager">
+  <div class="wrap">
+    <p class="eyebrow reveal">Get Saucy Table · Private Chef</p>
+    <h1 class="reveal" data-delay="80">A night they'll<span class="script">talk about.</span></h1>
+    <p class="lead reveal" data-delay="160">The same hands that bottle the sauce will cook your dinner. Tell us the occasion, the headcount, the vibe — we handle the flavor.</p>
+    <div class="hero-cta reveal" data-delay="240"><a class="btn btn-primary btn-magnetic" href="#booking">Reserve Your Date →</a><a class="btn btn-ghost" href="#packages">See Packages</a></div>
+  </div>
+</section>
+
+<section id="packages" class="center">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin:0 auto">
+      <p class="eyebrow">The Experience</p>
+      <h2>Pick your <span class="fire-text">night.</span></h2>
+      <p class="lead">Custom, seasonal, unapologetically flavor-forward menus — with optional Get Saucy pairings woven in.</p>
+    </div>
+    <div class="note">Package names, inclusions, guest counts, and prices below are <strong>placeholders</strong> for Bryan to set.</div>
+    <div class="grid grid-3" data-stagger style="text-align:left">
+      <div class="pkg reveal">
+        <p class="eyebrow">Intimate</p><h3>The Drop-In</h3><p class="price">$X</p>
+        <ul><li>Custom menu consult</li><li>Market-fresh shopping</li><li>Full cook &amp; plating</li><li>Cleanup included</li><li>Serves up to [X] guests</li></ul>
+        <a class="btn btn-dark" href="#booking">Book The Drop-In</a>
+      </div>
+      <div class="pkg featured reveal">
+        <p class="eyebrow">Signature</p><h3>The Main Event</h3><p class="price">$X</p>
+        <ul><li>Multi-course tasting menu</li><li>Optional Get Saucy pairings</li><li>Welcome bites + dessert</li><li>Full service, start to finish</li><li>Serves up to [X] guests</li></ul>
+        <a class="btn btn-primary btn-magnetic" href="#booking">Book The Main Event</a>
+      </div>
+      <div class="pkg reveal">
+        <p class="eyebrow">All-in</p><h3>The Full Spread</h3><p class="price">$X</p>
+        <ul><li>Bespoke menu design</li><li>Premium ingredients</li><li>Extra hands / front-of-house</li><li>Get Saucy tasting moment</li><li>Serves up to [X] guests</li></ul>
+        <a class="btn btn-dark" href="#booking">Book The Full Spread</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="band">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin:0 auto 30px">
+      <p class="eyebrow">Reserve</p><h2>Book your table</h2>
+      <p class="lead">Dates go fast. Pick a time and Bryan follows up to design your menu.</p>
+    </div>
+    <div class="note">
+      <strong>Setup note:</strong> embed your scheduler here — create a free <strong>Cal.com</strong> or <strong>Calendly</strong> event and paste its embed in place of the box below. Until then, the inquiry form emails you directly.
+    </div>
+    <div class="imgslot reveal" style="min-height:380px;border-style:dashed">
+      <div class="ph"><span class="big">📅</span>Booking calendar goes here<br><code>paste your Cal.com / Calendly embed</code></div>
+    </div>
+    <div class="card reveal" style="margin-top:28px;max-width:720px;margin-left:auto;margin-right:auto">
+      <h3>Or send an inquiry</h3>
+      <p style="color:var(--muted)">Tell Bryan the occasion, the headcount, and the vibe.</p>
+      <!-- Setup: replace action with your Formspree endpoint -->
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" name="email" required></div>
+        <div class="field"><label for="date">Preferred date</label><input id="date" type="date" name="date"></div>
+        <div class="field"><label for="guests">Guest count</label><input id="guests" type="number" name="guests" min="1"></div>
+        <div class="field"><label for="pkg">Package interest</label><select id="pkg" name="package"><option>The Drop-In</option><option>The Main Event</option><option>The Full Spread</option><option>Not sure yet</option></select></div>
+        <div class="field"><label for="msg">The occasion &amp; vibe</label><textarea id="msg" name="message" placeholder="Birthday for 8, loves spice, relaxed but special..."></textarea></div>
+        <button class="btn btn-primary btn-magnetic" type="submit">Send Inquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brandmark" href="index.html" style="color:var(--cream)"><img src="assets/logo.svg" alt="Get Saucy" style="height:50px"></a>
+        <p style="margin-top:14px;max-width:340px">Craft hot sauce, handmade in Asheville, NC. Garden-grown peppers, a local artist on every label.</p>
+      </div>
+      <div><h4>Explore</h4><p><a href="shop.html">Shop Sauce</a><br><a href="book.html">Book a Chef</a><br><a href="about.html">About</a></p></div>
+      <div><h4>Follow</h4><p><a href="https://www.instagram.com/getsaucyhotsauce/" target="_blank" rel="noopener">Instagram @getsaucyhotsauce</a><br><a href="https://www.facebook.com/bryan.clark.299631" target="_blank" rel="noopener">Facebook</a><br><a href="#contact">Contact</a></p></div>
+    </div>
+    <div class="legal"><span>© <span id="yr"></span> Get Saucy · Craft Hot Sauce · Asheville, NC</span><span>Grown in Asheville. Gone too soon. 🌶️</span></div>
+  </div>
+</footer>
+
+<script src="assets/motion.js" defer></script>
+</body>
+</html>

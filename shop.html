@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop the Sauce — Get Saucy | Craft Hot Sauce, Asheville NC</title>
+<meta name="description" content="Shop Get Saucy craft hot sauce — small-batch, garden-grown peppers, a local artist on every label. Strabanero, Amnesia, and rotating limited drops. Ships nationwide.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="index.html"><img src="assets/logo.svg" alt="Get Saucy"><span>GET SAUCY</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="book.html">Book a Chef</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-primary btn-magnetic" href="#lineup">Shop the Drop</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" style="min-height:62vh">
+  <canvas class="hero__canvas" aria-hidden="true"></canvas>
+  <img class="hero__img" src="assets/gs-bottles-batch3.jpg" alt="Get Saucy bottle trio" loading="eager">
+  <div class="wrap">
+    <p class="eyebrow reveal">The Lineup · Asheville, NC</p>
+    <h1 class="reveal" data-delay="80">Small batches.<span class="script">Big flavor.</span></h1>
+    <p class="lead reveal" data-delay="160">Garden-grown peppers, roasted and balanced by hand, wrapped in original art. Limited rotating drops — when a flavor's gone, it's gone.</p>
+  </div>
+</section>
+
+<section id="lineup">
+  <div class="wrap">
+    <div class="note">
+      <strong>Setup notes (remove before launch):</strong> Replace each <code>STRIPE_PAYMENT_LINK</code> with a real Stripe Payment Link (placeholders: <code>_STRABANERO</code>, <code>_AMNESIA</code>, <code>_DROP</code>, <code>_SET</code>). Strabanero &amp; Amnesia are confirmed flavors; the rotating drop's name &amp; all prices need confirming.
+    </div>
+
+    <div class="grid grid-3" data-stagger>
+
+      <article class="product reveal">
+        <div class="shot"><img src="assets/gs-strabanero.jpg" alt="Strabanero hot sauce" loading="lazy"><span class="artist-credit">art: @mossy.tats</span></div>
+        <div class="pbody">
+          <span class="tag">Signature</span>
+          <p class="dropname">"Sun-Drunk Summer"</p>
+          <h3>Strabanero</h3>
+          <div class="heat" data-heat="3"><span class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="lbl">Heat 3 / 5</span></div>
+          <p class="desc">Sun-warmed strawberry up front; the habanero rolls in slow and settles deep. Citrus-clean finish. <em>Pairs with aged cheddar, grilled peaches, even soft-serve.</em></p>
+          <div class="prow"><span class="price">$13</span><a class="btn btn-primary btn-magnetic" href="STRIPE_PAYMENT_LINK_STRABANERO" target="_blank" rel="noopener">Add to Cart</a></div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="shot"><img src="assets/gs-bottles-ship.jpg" alt="Amnesia hot sauce" loading="lazy"><span class="artist-credit">art: local artist</span></div>
+        <div class="pbody">
+          <span class="tag" style="background:rgba(242,150,12,.16);color:#ffd28a;border-color:rgba(242,150,12,.45)">Signature</span>
+          <p class="dropname">"The Morning After"</p>
+          <h3>Amnesia</h3>
+          <div class="heat" data-heat="4"><span class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="lbl">Heat 4 / 5</span></div>
+          <p class="desc">Earthy, almost smoky. The heat arrives like certainty and blooms savory-sweet mid-palate, lingering long after the plate. <em>Pairs with smash burgers, lamb tacos, eggs.</em></p>
+          <div class="prow"><span class="price">$14</span><a class="btn btn-primary btn-magnetic" href="STRIPE_PAYMENT_LINK_AMNESIA" target="_blank" rel="noopener">Add to Cart</a></div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="shot"><img src="assets/gs-flavor-athena.jpg" alt="The latest limited drop" loading="lazy"><span class="artist-credit">art: @artviaathena</span></div>
+        <div class="pbody">
+          <span class="tag" style="background:rgba(42,191,191,.16);color:#8ff0f0;border-color:rgba(42,191,191,.45)">Limited drop</span>
+          <p class="dropname">"Drop No. — "</p>
+          <h3>The Latest Drop <span style="font-weight:400;font-size:.6em;color:var(--muted)">[name TBC]</span></h3>
+          <div class="heat" data-heat="3"><span class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="lbl">Heat 3 / 5</span></div>
+          <p class="desc">One artist, one run, then it's history. Newest collab with @artviaathena — same handcrafted heat inside, completely unrepeatable outside. No restocks.</p>
+          <div class="prow"><span class="price">$14</span><a class="btn btn-primary btn-magnetic" href="STRIPE_PAYMENT_LINK_DROP" target="_blank" rel="noopener">Add to Cart</a></div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="shot"><img src="assets/gs-bottles-citrus.jpg" alt="Get Saucy bottle lineup" loading="lazy"></div>
+        <div class="pbody">
+          <span class="tag" style="background:rgba(255,210,63,.16);color:#ffe08a;border-color:rgba(255,210,63,.45)">Best value</span>
+          <p class="dropname">"The Whole Flight"</p>
+          <h3>The Saucy Set</h3>
+          <div class="heat" data-heat="5"><span class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="lbl">Mild → wild</span></div>
+          <p class="desc">A bottle of every current flavor — different artists, the whole heat range, one box. The perfect gift, or a serious fridge-door upgrade.</p>
+          <div class="prow"><span class="price">$36</span><a class="btn btn-primary btn-magnetic" href="STRIPE_PAYMENT_LINK_SET" target="_blank" rel="noopener">Add to Cart</a></div>
+        </div>
+      </article>
+
+      <!-- Artist-collab callout spanning 2 -->
+      <article class="card reveal" style="grid-column:span 2;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <img src="assets/gs-art-mossy.jpg" alt="Featured artist" loading="lazy" style="width:200px;height:200px;object-fit:cover;border-radius:14px;flex:0 0 auto;border:1px solid var(--line)">
+        <div style="flex:1;min-width:240px">
+          <span class="tag" style="background:rgba(255,210,63,.16);color:#ffe08a;border-color:rgba(255,210,63,.45)">The model</span>
+          <h3 style="margin:.4em 0 .2em">A local artist on every label.</h3>
+          <p class="desc" style="color:var(--muted)">Every drop is a collaboration — @mossy.tats, @artviaathena, and more. Buy a bottle, support the Asheville scene. New artists, new flavors, all year.</p>
+          <a class="btn btn-dark" href="about.html">Meet the artists →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="band-fire center">
+  <div class="wrap section-head reveal" style="margin:0 auto">
+    <h2>Rather have it cooked for you?</h2>
+    <p class="lead" style="color:#e8d6ba">Book the chef behind the sauce and taste it the way it's meant to be served.</p>
+    <a class="btn btn-ember btn-magnetic" href="book.html">Book a Private Dinner →</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brandmark" href="index.html" style="color:var(--cream)"><img src="assets/logo.svg" alt="Get Saucy" style="height:50px"></a>
+        <p style="margin-top:14px;max-width:340px">Craft hot sauce, handmade in Asheville, NC. Garden-grown peppers, a local artist on every label.</p>
+      </div>
+      <div><h4>Explore</h4><p><a href="shop.html">Shop Sauce</a><br><a href="book.html">Book a Chef</a><br><a href="about.html">About</a></p></div>
+      <div><h4>Follow</h4><p><a href="https://www.instagram.com/getsaucyhotsauce/" target="_blank" rel="noopener">Instagram @getsaucyhotsauce</a><br><a href="https://www.facebook.com/bryan.clark.299631" target="_blank" rel="noopener">Facebook</a><br><a href="about.html#contact">Contact</a></p></div>
+    </div>
+    <div class="legal"><span>© <span id="yr"></span> Get Saucy · Craft Hot Sauce · Asheville, NC</span><span>Grown in Asheville. Gone too soon. 🌶️</span></div>
+  </div>
+</footer>
+
+<div class="buybar" aria-hidden="true">
+  <div class="wrap">
+    <div class="txt">🔥 <b>Limited drop</b> — small batches, no restocks. Once it's gone, it's lore.</div>
+    <a class="btn btn-primary btn-magnetic" href="#lineup">Shop Now</a>
+  </div>
+</div>
+
+<script src="assets/motion.js" defer></script>
+</body>
+</html>

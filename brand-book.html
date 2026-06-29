@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Saucy — Brand Portfolio Book</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0805;--bg-2:#140d08;--panel:#15100b;--panel-2:#1d140d;--line:#3a2a1d;--line-soft:#241a12;--charcoal:#16100c;--red:#E23B2E;--ember:#F2960C;--gold:#FFD23F;--teal:#2ABFBF;--lime:#9BC53D;--cream:#F6EBD7;--text:#E7D8C2;--muted:#9c876f}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--text);background:radial-gradient(900px 600px at 85% -5%,rgba(226,59,46,.16),transparent 60%),radial-gradient(800px 600px at 0% 10%,rgba(242,150,12,.10),transparent 55%),var(--bg);line-height:1.6}
+.page{max-width:900px;margin:28px auto;background:linear-gradient(160deg,var(--panel),var(--bg-2));box-shadow:0 24px 60px rgba(0,0,0,.6);padding:64px 70px;border-radius:10px;border:1px solid var(--line)}
+h1,h2,h3,h4{font-family:'Archivo Black',sans-serif;line-height:1.05;letter-spacing:-.5px;margin:0 0 .4em;color:var(--cream)}
+h1{font-size:3.2rem}h2{font-size:2rem;margin-top:0}h3{font-size:1.2rem}
+.script{font-family:'Pacifico',cursive;font-weight:400;letter-spacing:0}
+.eyebrow{font-weight:800;text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;color:var(--ember);margin-bottom:8px}
+p{margin:0 0 1em}
+.muted{color:var(--muted)}
+strong{color:#f3e2c8}
+.cover{background:radial-gradient(700px 380px at 80% 0,rgba(226,59,46,.32),transparent 60%),radial-gradient(500px 300px at 10% 100%,rgba(242,150,12,.2),transparent 60%),linear-gradient(160deg,#1c0f09,#070504);color:var(--cream);text-align:center;padding:90px 70px;border-color:var(--line)}
+.cover h1{color:var(--cream);font-size:3.6rem;text-shadow:0 0 40px rgba(226,59,46,.4)}
+.cover h1 .script{color:var(--gold)}
+.cover .logo{width:140px;margin:0 auto 24px;filter:drop-shadow(0 0 24px rgba(255,210,63,.3))}
+.divider{height:4px;background:linear-gradient(90deg,var(--red),var(--ember),var(--gold),var(--teal),var(--lime));border-radius:4px;margin:8px 0 36px}
+section.block{margin-bottom:48px}
+.swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:18px 0}
+.sw{border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--panel-2)}
+.sw .chip{height:80px}
+.sw .meta{padding:8px 10px;font-size:.74rem;color:var(--text)}
+.sw .meta b{display:block;font-size:.82rem;color:var(--cream)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:linear-gradient(150deg,var(--panel-2),var(--bg-2));border:1px solid var(--line);border-radius:12px;padding:20px}
+table{width:100%;border-collapse:collapse;font-size:.92rem;margin:10px 0}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+th{background:rgba(255,210,63,.08);font-family:'Archivo Black',sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;color:var(--gold)}
+.peppers{letter-spacing:1px}
+.tagbox{display:inline-block;background:rgba(42,191,191,.16);color:#8ff0f0;border:1px solid rgba(42,191,191,.4);font-weight:700;font-size:.8rem;padding:5px 12px;border-radius:999px;margin:3px 4px 3px 0}
+.tagline-primary{font-family:'Archivo Black',sans-serif;font-size:1.5rem;color:var(--red)}
+.voice{border-left:4px solid var(--ember);padding:8px 0 8px 16px;margin:14px 0}
+.voice .samp{font-family:'Pacifico',cursive;color:var(--gold)}
+.note{background:rgba(242,150,12,.08);border:1px dashed rgba(242,150,12,.5);border-radius:10px;padding:12px 16px;font-size:.88rem;color:#e9c890}
+.note strong{color:var(--gold)}
+.fonts span{display:block}
+.f-display{font-family:'Archivo Black',sans-serif;font-size:2rem;color:var(--cream)}
+.f-script{font-family:'Pacifico',cursive;font-size:2rem;color:var(--ember)}
+.f-body{font-family:'Inter',sans-serif;font-size:1.1rem}
+ul.clean{list-style:none;padding:0}ul.clean li{padding-left:24px;position:relative;margin-bottom:8px}ul.clean li::before{content:"🌶️";position:absolute;left:0}
+.logo-demo{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.logo-demo .on-dark{background:#070504;padding:18px;border-radius:12px;border:1px solid var(--line)}
+.logo-demo .on-light{background:var(--cream);padding:18px;border-radius:12px;border:1px solid var(--line)}
+.logo-demo img{height:90px;display:block}
+@media print{body{background:#0c0805 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{box-shadow:none;margin:0;border-radius:0;max-width:none;page-break-after:always}}
+@media(max-width:680px){.page{padding:40px 26px}.swatches{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.cover{padding:56px 26px}h1,.cover h1{font-size:2.4rem}}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <img class="logo" src="assets/logo.svg" alt="Get Saucy logo">
+  <p class="eyebrow" style="color:var(--gold)">Brand Portfolio Book</p>
+  <h1>Get <span class="script">Saucy</span></h1>
+  <p style="font-size:1.15rem;color:#e8ddc8;max-width:520px;margin:10px auto 0">Craft Hot Sauce · Asheville, NC<br>Garden-grown peppers. Small-batch flavor. A local artist on every label.</p>
+  <p class="muted" style="margin-top:40px;color:#b7a98f;font-size:.85rem">Version 1.0 · Working draft · Placeholders marked throughout for confirmation</p>
+</div>
+
+<!-- 1. STORY -->
+<div class="page">
+  <section class="block">
+    <p class="eyebrow">01 — The Brand</p>
+    <h2>Our Story</h2>
+    <div class="divider"></div>
+    <p>Get Saucy is craft hot sauce from <strong>Asheville, North Carolina</strong>, built on one belief: hot sauce should taste like <em>something</em> — not just burn. So we grow our own peppers, roast and balance every batch by hand, and bottle in small runs. Scotch bonnet, ghost, reaper, habanero — heat with a backbone.</p>
+    <p>But the sauce is only half the story. Every flavor is a collaboration with a <strong>local artist</strong>, who designs original art for the label. Buy a bottle, support the scene. Our breakout, <strong>Strabanero</strong> — strawberry and habanero — wears artwork by <strong>@mossy.tats</strong>. That's the whole idea: supporting local artists through hot sauce, one bottle at a time.</p>
+    <p>We ship nationwide, and we cook, too — the chef behind the sauce takes private-dinner bookings, bringing Get Saucy straight to the table.</p>
+    <div class="note"><strong>Placeholders to confirm:</strong> founder name &amp; bio · the first-batch origin moment · year founded · full flavor list &amp; real names (only <em>Strabanero</em> is verified) · private-chef details &amp; service area.</div>
+  </section>
+
+  <section class="block">
+    <p class="eyebrow">02 — North Star</p>
+    <h2>Mission &amp; Positioning</h2>
+    <div class="divider"></div>
+    <div class="grid2">
+      <div class="card"><h3>Mission</h3><p class="muted">Make small-batch craft hot sauce that earns its place at the table — bold, balanced, garden-grown — and lift up local artists with every label we print.</p></div>
+      <div class="card"><h3>Vision</h3><p class="muted">A world where "spicy" never means "one-note," where a bottle of sauce can also be a piece of art and a hand extended to a local maker.</p></div>
+    </div>
+    <h3 style="margin-top:22px">Positioning</h3>
+    <p>For flavor-driven home cooks and hosts who think most hot sauce is all heat and no soul, <strong>Get Saucy</strong> is small-batch, garden-grown craft hot sauce from Asheville — every flavor wrapped in original art by a local artist. Unlike mass-market bottles built for shock value and shelf life, Get Saucy is built for taste first, community always.</p>
+  </section>
+</div>
+
+<!-- 3. AUDIENCE + VOICE -->
+<div class="page">
+  <section class="block">
+    <p class="eyebrow">03 — Who It's For</p>
+    <h2>Audience</h2>
+    <div class="divider"></div>
+    <div class="grid2">
+      <div class="card"><h3>The Flavor Chaser</h3><p class="muted">Owns more hot sauces than spoons. Reads labels for fun. Pays extra for the bottle that does something the others can't.</p></div>
+      <div class="card"><h3>The Art &amp; Local Supporter</h3><p class="muted">Loves craft, loves the scene. The artist-collab labels are the hook; the flavor makes them stay.</p></div>
+      <div class="card"><h3>The Gifter</h3><p class="muted">Hunts for the thing nobody else has. Buys the set for the foodie who has everything — keeps a bottle for themselves.</p></div>
+      <div class="card"><h3>The Host</h3><p class="muted">Throws the dinners people angle to get invited to. Books the private chef, leaves with a new favorite bottle.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <p class="eyebrow">04 — How We Sound</p>
+    <h2>Voice &amp; Tone</h2>
+    <div class="divider"></div>
+    <p>Get Saucy talks bold, a little cheeky, deeply serious about flavor and never precious about it. Confident, never cocky. Witty, never goofy. We let the craft do the bragging.</p>
+    <div class="voice"><strong>Bold, not bullying.</strong> <span class="muted">Strong claims, backed by flavor — not macho pain-dares.</span><br><span class="samp">"Heat that shows up with a flavor, not just a fire alarm."</span></div>
+    <div class="voice"><strong>Witty, not gimmicky.</strong> <span class="muted">Earn the smile, then get out of the way.</span><br><span class="samp">"Pours like trouble. Tastes like you meant to do that."</span></div>
+    <div class="voice"><strong>Craft-but-approachable.</strong> <span class="muted">Talk technique like a friend at the stove, never snobbery.</span><br><span class="samp">"Roasted, not rushed. You'll taste it before you feel it."</span></div>
+    <div class="voice"><strong>Community-minded.</strong> <span class="muted">The artists and the scene are part of the brag.</span><br><span class="samp">"A local artist on every label. Join the journey."</span></div>
+    <h3 style="margin-top:22px">Taglines</h3>
+    <p class="tagline-primary">"Join the journey." <span style="font-size:.7rem;color:var(--muted);font-family:Inter">— primary</span></p>
+    <p><span class="tagbox">Bottled heat, wrapped in art.</span><span class="tagbox">Heat with purpose.</span><span class="tagbox">A local artist on every label.</span><span class="tagbox">Craft sauce. Community first.</span></p>
+  </section>
+</div>
+
+<!-- 5. IDENTITY -->
+<div class="page">
+  <section class="block">
+    <p class="eyebrow">05 — Visual Identity</p>
+    <h2>Logo</h2>
+    <div class="divider"></div>
+    <p>The mark is a bubble-graffiti <strong>GET SAUCY</strong> wordmark in gold on a teal disc, with a single sauce drip — street-art energy, craft heart. Use the disc version as the primary mark (avatar, favicon, label seal). Give it room to breathe; never stretch or recolor the gold.</p>
+    <div class="logo-demo">
+      <div class="on-dark"><img src="assets/logo.svg" alt="Logo on dark"></div>
+      <div class="on-light"><img src="assets/logo.svg" alt="Logo on light"></div>
+    </div>
+    <div class="note"><strong>Note:</strong> This is a clean digital recreation of the real graffiti mark for web/favicon use. For print/labels, keep the original hand-drawn artist version as the hero lockup.</div>
+  </section>
+
+  <section class="block">
+    <h2>Color</h2>
+    <div class="divider"></div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#16100c"></div><div class="meta"><b>Charcoal</b>#16100C</div></div>
+      <div class="sw"><div class="chip" style="background:#17A8B0"></div><div class="meta"><b>Teal</b>#17A8B0</div></div>
+      <div class="sw"><div class="chip" style="background:#FFD23F"></div><div class="meta"><b>Gold</b>#FFD23F</div></div>
+      <div class="sw"><div class="chip" style="background:#D6342B"></div><div class="meta"><b>Saucy Red</b>#D6342B</div></div>
+      <div class="sw"><div class="chip" style="background:#F2960C"></div><div class="meta"><b>Ember</b>#F2960C</div></div>
+    </div>
+    <p class="muted" style="font-size:.9rem">Charcoal grounds everything. Teal is the signature (logo disc, accents). Gold is the wordmark &amp; highlights. Saucy Red and Ember carry the heat — buttons, hot-tier cues. Garden green (<b>#7FB23A</b>) is a supporting accent for fresh/mild and produce.</p>
+  </section>
+
+  <section class="block">
+    <h2>Typography</h2>
+    <div class="divider"></div>
+    <div class="fonts grid2">
+      <div class="card"><span class="f-display">Archivo Black</span><p class="muted">Display &amp; headlines — loud, unmissable, label-ready.</p></div>
+      <div class="card"><span class="f-script">Pacifico</span><p class="muted">Script accent — the "Saucy" signature. Use sparingly.</p></div>
+      <div class="card"><span class="f-body">Inter — body copy</span><p class="muted">Clean, legible body &amp; UI. Weights 400–800.</p></div>
+      <div class="card"><h3>Pairing rule</h3><p class="muted">One display, one accent, one body. Never two scripts. Let the art labels be the loud thing.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- 6. PRODUCTS -->
+<div class="page">
+  <section class="block">
+    <p class="eyebrow">06 — The Lineup</p>
+    <h2>Product Range</h2>
+    <div class="divider"></div>
+    <p class="muted">Only <strong>Strabanero</strong> is verified. The rest are placeholders modeled on the real pepper varieties (golden habanero, verde, scotch bonnet, reaper) — confirm names, profiles, and prices.</p>
+    <table>
+      <tr><th>Sauce</th><th>Heat</th><th>Profile</th><th>Price</th></tr>
+      <tr><td><b>Strabanero</b> <span class="muted">(verified)</span></td><td class="peppers">🌶️🌶️🌶️</td><td>Strawberry + habanero — sweet front, serious finish. Art by @mossy.tats.</td><td>$13*</td></tr>
+      <tr><td><b>Amnesia</b> <span class="muted">(confirmed)</span></td><td class="peppers">🌶️🌶️🌶️🌶️</td><td>Bold &amp; spicy — the one you won't forget. Confirm heat &amp; notes.</td><td>$14*</td></tr>
+      <tr><td>The Latest Drop <span class="muted">[name TBC]</span></td><td class="peppers">🌶️🌶️🌶️</td><td>Newest rotating flavor, art by @artviaathena. Limited.</td><td>$14*</td></tr>
+      <tr><td><b>The Full Set</b></td><td class="peppers">range</td><td>All flavors, five artists, one gift box.</td><td>$59*</td></tr>
+    </table>
+    <p class="muted" style="font-size:.82rem">* placeholder pricing</p>
+  </section>
+
+  <section class="block">
+    <p class="eyebrow">07 — Private Chef</p>
+    <h2>Get Saucy Table</h2>
+    <div class="divider"></div>
+    <p>The chef behind the sauce, in your kitchen. Custom, seasonal, flavor-forward menus — with Get Saucy woven in. You host; we handle the rest.</p>
+    <table>
+      <tr><th>Package</th><th>Includes</th><th>Price</th></tr>
+      <tr><td><b>The Drop-In</b></td><td>Menu consult, market shopping, full cook + plating, cleanup.</td><td>$X*</td></tr>
+      <tr><td><b>The Main Event</b></td><td>Multi-course tasting, Get Saucy pairings, welcome bites + dessert, full service.</td><td>$X*</td></tr>
+      <tr><td><b>The Full Spread</b></td><td>Bespoke menu, premium ingredients, extra hands, tasting moment.</td><td>$X*</td></tr>
+    </table>
+    <p class="muted" style="font-size:.82rem">* confirm packages, guest counts, pricing, lead time &amp; service area.</p>
+  </section>
+</div>
+
+<!-- 8. DIRECTION + SOCIAL -->
+<div class="page">
+  <section class="block">
+    <p class="eyebrow">08 — Look &amp; Feel</p>
+    <h2>Packaging &amp; Photography</h2>
+    <div class="divider"></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Packaging</h3>
+        <ul class="clean">
+          <li>Classic woozy bottle, clear glass — let the sauce color sell itself.</li>
+          <li>Original artist label per flavor; credit the artist on the back.</li>
+          <li>Consistent front-of-bottle heat meter (1–5 peppers).</li>
+          <li>Black tamper cap; gold "GET SAUCY" graffiti mark recurring across the family.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Photography</h3>
+        <ul class="clean">
+          <li>Sauce is the hero — warm light, charcoal/teal backdrops, a deliberate drip.</li>
+          <li>Real food, mid-action: the pour, the dunk, the glistening wing.</li>
+          <li>Garden &amp; harvest shots — peppers on the plant, in the colander.</li>
+          <li>Hands at work: roasting, bottling, plating. Show the craft.</li>
+          <li>Lifestyle = the table: candlelight, full plates, people leaning in.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <p class="eyebrow">09 — Social</p>
+    <h2>Social Strategy</h2>
+    <div class="divider"></div>
+    <p>Instagram <strong>@getsaucyhotsauce</strong> (primary) + Facebook for events &amp; local reach. Content pillars: <strong>Flavor &amp; Product</strong>, <strong>Behind the Batch</strong>, <strong>The Garden</strong>, <strong>Artist Spotlights</strong>, <strong>The Table</strong>. Cadence: IG 3–4 posts/week + Stories; FB 2–3/week plus every drop &amp; event.</p>
+    <div class="note"><strong>Personal vs. brand:</strong> @greyfx721 is the maker's personal account (travel/family/art). Keep brand content on <strong>@getsaucyhotsauce</strong>; cross-post selectively.</div>
+  </section>
+
+  <section class="block">
+    <h2 class="script" style="color:var(--red);font-size:2.4rem">Join the journey.</h2>
+    <p class="muted">@getsaucyhotsauce · Asheville, NC</p>
+  </section>
+</div>
+
+</body>
+</html>
