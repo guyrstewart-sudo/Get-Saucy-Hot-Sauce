@@ -14,6 +14,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<style>
+/* Hero brand emblem in the left gutter (wide screens only) */
+.hero__emblem{display:none;position:absolute;top:50%;right:calc(50% + 560px);transform:translateY(-50%);height:36%;max-height:360px;width:auto;z-index:3;
+  filter:drop-shadow(0 0 48px rgba(42,191,191,.45)) drop-shadow(0 0 26px rgba(255,210,63,.3));animation:gsfloat 6s ease-in-out infinite}
+@media(min-width:1850px){.hero__emblem{display:block}}
+@keyframes gsfloat{0%,100%{transform:translateY(-50%)}50%{transform:translateY(calc(-50% - 14px))}}
+@media (prefers-reduced-motion:reduce){.hero__emblem{animation:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,6 +46,7 @@
 <!-- HERO -->
 <section class="hero">
   <canvas class="hero__canvas" aria-hidden="true"></canvas>
+  <img class="hero__emblem" src="assets/logo.svg" alt="" aria-hidden="true">
   <img class="hero__img" src="assets/gs-strabanero.jpg" alt="Get Saucy Strabanero bottles glowing in golden light" loading="eager">
   <div class="wrap">
     <p class="eyebrow reveal">Craft Hot Sauce · Asheville, NC</p>
